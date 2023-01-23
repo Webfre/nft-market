@@ -3,12 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fontsource/akaya-telivigala": "^4.5.8",
+    "@fontsource/sora": "^4.5.12",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gsap": "^3.9.1",
+    "node-sass": "^7.0.3",
     "react": "^18.2.0",
+    "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
+    "react-use": "^17.4.0",
+    "react-use-window-scroll": "^1.1.1",
+    "styled-components": "^5.3.6",
+    "swiper": "^8.4.5",
+    "typewriter-effect": "^2.19.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.57.1"
   }
 }
