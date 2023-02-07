@@ -1,6 +1,6 @@
 # NFT marketplace
 
-![Image alt](https://github.com/Webfre/nft-market/blob/main/src/assets/nft.png)
+![Image alt](https://github.com/Webfre/nft-market/blob/main/src/assets/nftprev.png)
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=webfre&label=Profile%20views&color=0e75b6&style=flat" alt="webfre" /> </p>
 
