@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/nft-market/static/css/main.54a1dd6c.css",
+    "main.js": "/nft-market/static/js/main.29c7e9fc.js",
+    "static/media/Team5.png": "/nft-market/static/media/Team5.cd774f408f433a727288.png",
+    "static/media/Video.gif": "/nft-market/static/media/Video.7f4ba60ca3e4ec86c782.gif",
+    "static/media/3.png": "/nft-market/static/media/3.0810ce0bfe673f9d3ba6.png",
+    "static/media/4.png": "/nft-market/static/media/4.403e253b8e6b3b1cb0c7.png",
+    "static/media/5.png": "/nft-market/static/media/5.431e87752b1162dd04be.png",
+    "static/media/1.png": "/nft-market/static/media/1.5af214c16b25ccc3db2a.png",
+    "static/media/unnamed8.png": "/nft-market/static/media/unnamed8.99b9a0be594b45b1fa6a.png",
+    "static/media/unnamed2.png": "/nft-market/static/media/unnamed2.3b78d9109d4337472b64.png",
+    "static/media/unnamed1.png": "/nft-market/static/media/unnamed1.4b53d7310166c6195862.png",
+    "static/media/unnamed7.png": "/nft-market/static/media/unnamed7.02bec0e6bbd772bf6fa1.png",
+    "static/media/unnamed3.png": "/nft-market/static/media/unnamed3.391371015536a5ade714.png",
+    "static/media/unnamed11.png": "/nft-market/static/media/unnamed11.19b1e78cbd9bb405c96f.png",
+    "static/media/2.png": "/nft-market/static/media/2.cc0cb2e27e7ce29fb4f4.png",
+    "static/media/unnamed9.png": "/nft-market/static/media/unnamed9.3c9a9f57fab0f0646e54.png",
+    "static/media/unnamed6.png": "/nft-market/static/media/unnamed6.20e1210cd78abd4343a9.png",
+    "static/media/unnamed5.png": "/nft-market/static/media/unnamed5.0aadfda3d3b1dfbf256f.png",
+    "static/media/unnamed4.png": "/nft-market/static/media/unnamed4.73654220042a64b871ad.png",
+    "static/media/unnamed12.png": "/nft-market/static/media/unnamed12.0fde5f798a48cc3bab03.png",
+    "static/media/unnamed.png": "/nft-market/static/media/unnamed.db7cd526ced201064d30.png",
+    "static/media/unnamed10.png": "/nft-market/static/media/unnamed10.39e0ac2ae04816603274.png",
+    "static/media/Team2.png": "/nft-market/static/media/Team2.a84ef5ebbefb784118eb.png",
+    "static/media/Team1.png": "/nft-market/static/media/Team1.78e7fde062f6fd3529bb.png",
+    "static/media/Team6.png": "/nft-market/static/media/Team6.46b10485959b20f62f6d.png",
+    "static/media/Team4.png": "/nft-market/static/media/Team4.bc925cc928b60cd6c908.png",
+    "static/media/Team8.png": "/nft-market/static/media/Team8.ba884323d4857d536ad0.png",
+    "static/media/Team9.png": "/nft-market/static/media/Team9.cf2af44eaf569994bda3.png",
+    "static/media/Arrow.svg": "/nft-market/static/media/Arrow.94ea34e744b92c5dad541e35d3a63dab.svg",
+    "index.html": "/nft-market/index.html",
+    "static/media/Ethereum.svg": "/nft-market/static/media/Ethereum.44caf7f687ceac7228b187be67a0a151.svg",
+    "main.54a1dd6c.css.map": "/nft-market/static/css/main.54a1dd6c.css.map",
+    "main.29c7e9fc.js.map": "/nft-market/static/js/main.29c7e9fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54a1dd6c.css",
+    "static/js/main.29c7e9fc.js"
+  ]
+}
