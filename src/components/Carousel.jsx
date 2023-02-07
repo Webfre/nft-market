@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards, Pagination, Navigation, Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/effect-cards";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCards, Pagination, Navigation, Autoplay } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-cards';
 
 import {nftKong} from '../data';
 import Arrow from '../assets/Arrow.svg';
@@ -103,7 +103,7 @@ const Container = styled.div`
     height: 45vh;
     width: 60vw;
   }
-`
+`;
 
 function Carousel() {
   return (
@@ -120,10 +120,10 @@ function Carousel() {
         scrollbar={{
           draggable: true,
         }}
-        effect={"cards"}
+        effect={'cards'}
         grabCursor={true}
         modules={[EffectCards, Pagination, Navigation, Autoplay]}
-        className="mySwiper"
+        className='mySwiper'
       >
         {
           nftKong.map(({link, title}, id) => {
@@ -136,7 +136,7 @@ function Carousel() {
         }
       </Swiper>
     </Container>
-  )
+  );
 }
 
 export default Carousel;

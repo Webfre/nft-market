@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import {nftTeam} from '../../data';
 import ConfettiComponent from '../Confetti';
 
@@ -8,7 +9,7 @@ const Section = styled.section`
   width: 100vw;
   background-color: ${props => props.theme.body};
   position: relative;
-`
+`;
 
 const Title = styled.h2`
   font-size: ${props => props.theme.fontxxl};
@@ -24,7 +25,7 @@ const Title = styled.h2`
   @media (max-width: 40em) {
     font-size: ${props => props.theme.fontxl};
   }
-` 
+`; 
 
 const Container = styled.div`
   width: 75%;
@@ -42,7 +43,7 @@ const Container = styled.div`
     width: 90%;
     justify-content: center;
   }
-`
+`;
 
 const Item = styled.div`
   width: calc(20rem - 4vw);
@@ -65,7 +66,7 @@ const Item = styled.div`
   @media (max-width: 30em) {
     width: 70vw;
   }
-`
+`;
 
 const ImgContainer = styled.div`
   width: 80%;
@@ -82,7 +83,7 @@ const ImgContainer = styled.div`
     height: auto;
     transition all 0.3s ease; 
   }
-`
+`;
 
 const Name = styled.h2`
   font-size: ${props => props.theme.fontlg};
@@ -92,7 +93,7 @@ const Name = styled.h2`
   text-transform: uppercase;
   color: ${props => props.theme.text};
   margin-top: 1rem;
-`
+`;
 
 const Position = styled.h2`
   font-size: ${props => props.theme.fontmd};
@@ -101,9 +102,9 @@ const Position = styled.h2`
   align-items: center;
   color: ${props => `rgba(${props.theme.textRgba}, 0.9)`};
   font-weight: 400;
-`
+`;
 
-const MemberComponent = ({link, name="", position=""}) => {
+const MemberComponent = ({link, name='', position=''}) => {
   return (
     <Item>
       <ImgContainer>
@@ -112,25 +113,25 @@ const MemberComponent = ({link, name="", position=""}) => {
       <Name>{name}</Name>
       <Position>{position}</Position>
     </Item>
-  )
-}
+  );
+};
 
 function Team() {
   return (
     <Section id='team'>
-    <ConfettiComponent/>
+      <ConfettiComponent/>
       <Title>Team</Title>
       <Container>
         {
           nftTeam.map(({link, name, position}, id) => {
             return (
               <MemberComponent key={id} link={link} name={name} position={position} />
-            )
+            );
           })
         }
       </Container>
     </Section>
-  )
+  );
 }
 
 export default Team;

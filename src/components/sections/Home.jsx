@@ -1,6 +1,7 @@
 import React from 'react';
 import {HiArrowLongDown} from 'react-icons/hi2';
 import styled, { keyframes } from 'styled-components';
+
 import CoverVideo from '../CoverVideo';
 import TypeWriterText from '../TypeWriterText';
 import RoundTextBlack from '../../assets/Rounded-Text-Black.png';
@@ -10,7 +11,7 @@ const Section = styled.section`
   width: 100vw;
   position: relative;
   background-color: ${props => props.theme.body};
-`
+`;
 
 const Container = styled.div`
   width: 75%;
@@ -33,7 +34,7 @@ const Container = styled.div`
       margin-top: 2rem;
     }
   }
-`
+`;
 
 const Box = styled.div`
   width: 50%;
@@ -42,13 +43,13 @@ const Box = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`
+`;
 
 const rotate = keyframes`
   100% {
     transform: rotate(1turn);
   }
-`
+`;
 
 const Round = styled.div`
   position: absolute;
@@ -76,7 +77,7 @@ const Round = styled.div`
   @media (max-width: 48em) {
     right: 2rem;
   }
-`
+`;
 
 const Circle = styled.span`
   width: 3rem;
@@ -98,7 +99,7 @@ const Circle = styled.span`
     height: 2rem;
     font-size: ${props => props.theme.fontlg};
   }
-`
+`;
 
 function Home() {
   return (
@@ -111,12 +112,12 @@ function Home() {
           <Circle>
             <HiArrowLongDown/>
           </Circle>
-          <img src={RoundTextBlack} alt="NFT" />
+          <img src={RoundTextBlack} alt='NFT' />
         </Round>
 
       </Container>
     </Section>
-  )
+  );
 }
 
 export default Home;

@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import styled from 'styled-components';
+
 import Button from './Button';
 import Logo from './Logo';
 
 const Section = styled.section`
   width: 100vw;
   background-color: ${props => props.theme.body};
-`
+`;
 
 const NavBar = styled.nav`
   display: flex;
@@ -30,7 +31,7 @@ const NavBar = styled.nav`
       display: inline-block;
     }
   }
-`
+`;
 
 const Menu = styled.ul`
   display: flex;
@@ -57,7 +58,7 @@ const Menu = styled.ul`
 
     touch-action: none;
   }
-`
+`;
 
 const MenuItem = styled.li`
   margin: 0 1rem;
@@ -85,7 +86,7 @@ const MenuItem = styled.li`
       display: none;
     }
   }
-`
+`;
 
 const HamburgerMenu = styled.span`
   width: ${props => props.click ? '2rem' : '1.5rem'};
@@ -128,19 +129,19 @@ const HamburgerMenu = styled.span`
     transform: ${props => props.click ? 'rotate(40deg)' : 'rotate(0)'};
   }
 
-`
+`;
 
 function Navigation() {
   const [click, setClick] = useState(false);
 
   const scrollTo = (id) => {
-    let element = document.getElementById(id);
+    const element = document.getElementById(id);
 
     element.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
       inline: 'nearest',
-    })
+    });
 
     setClick(!click);
   };
@@ -152,7 +153,7 @@ function Navigation() {
         <HamburgerMenu
           onClick={() => setClick(!click)}
           click={click}
-          >
+        >
           &nbsp;
         </HamburgerMenu>
         <Menu click={click}>
@@ -163,17 +164,17 @@ function Navigation() {
           <MenuItem onClick={() => scrollTo('team')} >Team</MenuItem>
           <MenuItem onClick={() => scrollTo('faq')} >Faq</MenuItem>
           <MenuItem>
-            <div className="mobile">
+            <div className='mobile'>
               <Button text='Connect Wallet' link='https://google.com' />
             </div>
           </MenuItem>
         </Menu>
-          <div className='desktop'>
-            <Button text='Connect Wallet' link='https://google.com' />
-          </div>
+        <div className='desktop'>
+          <Button text='Connect Wallet' link='https://google.com' />
+        </div>
       </NavBar>
     </Section>
-  )
+  );
 }
 
 export default Navigation;

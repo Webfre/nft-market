@@ -1,8 +1,8 @@
 {
-  "name": "best-beer-brands",
+  "name": "nft-marketplace",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Webfre.github.io/Nft-project",
+  "homepage": "https://Webfre.github.io/nft-market",
   "dependencies": {
     "@fontsource/akaya-telivigala": "^4.5.8",
     "@fontsource/sora": "^4.5.12",
@@ -30,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint -c .eslintrc --ext .js,.jsx .",
+    "lint:fix": "npm run lint -- --fix"
   },
   "eslintConfig": {
     "extends": [

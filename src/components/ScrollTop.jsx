@@ -1,4 +1,4 @@
-import React, {useRef, useLayoutEffect } from 'react'
+import React, {useRef, useLayoutEffect } from 'react';
 import styled from 'styled-components';
 import {useWindowScroll} from 'react-use';
 
@@ -31,7 +31,7 @@ const Up = styled.div`
   &:active {
     transform: scale(0.9);
   }
-`
+`;
 
 function ScrollTop() {
   const ref = useRef(null);
@@ -43,22 +43,22 @@ function ScrollTop() {
     } else {
       ref.current.style.display = 'none';
     }
-  }, [y])
+  }, [y]);
 
   const scrollToTop = () => {
-    let element = document.getElementById('nav');
+    const element = document.getElementById('nav');
     element.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
       inline: 'nearest',
-    })
-  }
+    });
+  };
 
   return (
     <Up ref={ref} onClick={() => scrollToTop()} >
       &#x2191;
     </Up>
-  )
+  );
 }
 
 export default ScrollTop;

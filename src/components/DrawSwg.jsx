@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+
 import Vector from '../Icons/Vector';
 
 const VectorContainer = styled.div`
@@ -23,12 +24,12 @@ const VectorContainer = styled.div`
   @media (max-width: 48em) {
     left: 1.5rem;
   }
-`
+`;
 
 const Bounce = keyframes`
   from { transform: translateX(-50%) scale(0.5); }
   to { transform: translateX(-50%) scale(1); }
-`
+`;
 
 const Ball = styled.div`
   position: absolute;
@@ -44,7 +45,7 @@ const Ball = styled.div`
   @media (max-width: 48em) {
     left: 1.5rem;
   }
-`
+`;
 
 function DrawSwg() {
   const ref = useRef(null);
@@ -52,14 +53,14 @@ function DrawSwg() {
   gsap.registerPlugin(ScrollTrigger);
   
   useLayoutEffect(() => {
-    let element = ref.current;
-    let svg = document.getElementsByClassName("svg-path")[0];
+    const element = ref.current;
+    const svg = document.getElementsByClassName('svg-path')[0];
     const length = svg.getTotalLength();
 
     svg.style.strokeDasharray = length;
     svg.style.strokeDashoffset = length;
 
-    let t1 = gsap.timeline({
+    const t1 = gsap.timeline({
       scrollTrigger: {
         trigger: element,
         start: 'top center',
@@ -74,14 +75,14 @@ function DrawSwg() {
           } else {
             ballref.current.style.display = 'block';
           }
-        }
-      }
-    })
+        },
+      },
+    });
 
     return () => {
       if (t1) t1.kill();
-    }
-  }, [])
+    };
+  }, []);
 
 
   return (
@@ -91,7 +92,7 @@ function DrawSwg() {
         <Vector/>
       </VectorContainer>
     </>
-  )
+  );
 }
 
 export default DrawSwg;

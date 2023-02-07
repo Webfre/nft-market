@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
@@ -20,7 +20,7 @@ const Btn = styled.button`
     background-color: antiquewhite;
     color: black;
   }
-`
+`;
 
 function Button({text, link}) {
   return (
@@ -30,11 +30,11 @@ function Button({text, link}) {
         aria-label={text}
         target='_blank'
         rel='noreferrer'
-        >
-          {text}
-        </Link>
+      >
+        {text}
+      </Link>
     </Btn>
-  )
+  );
 }
 
 export default Button;

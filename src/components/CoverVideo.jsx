@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import GIF from '../assets/Video.gif';
 
 const VideoContainer = styled.div`
@@ -13,14 +14,14 @@ const VideoContainer = styled.div`
   @media (max-width: 64em) {
     min-width: 55vh;
   }
-`
+`;
 
 function CoverVideo() {
   return (
     <VideoContainer>
       <img src={GIF} />
     </VideoContainer>
-  )
+  );
 }
 
 export default CoverVideo;

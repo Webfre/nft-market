@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {FaMinus, FaPlus} from 'react-icons/fa';
+import { FaMinus, FaPlus } from 'react-icons/fa';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -13,28 +13,28 @@ const Container = styled.div`
   @media (max-width: 48em) {
     margin: 2rem 0;
   }
-`
+`;
 
 const Title = styled.div`
   font-size: ${props => props.theme.fontsm};
   display: flex;
   justify-content: space-between;
   align-items: center;
-`
+`;
 
 const Reveal = styled.div`
-  display: ${props => props.clicked ? 'block' : 'none'};
+  display: ${props => (props.clicked ? 'block' : 'none')};
   margin-top: 1rem;
   color: ${props => `rgba(${props.theme.bodyRgba}, 0.6)`};
   font-size: ${props => props.theme.fontsm};
   font-weight: 300;
   line-height: 1.1rem;
-`
+`;
 
 const Name = styled.div`
   display: flex;
   align-items: center;
-`
+`;
 
 const Indicator = styled.span`
   display: flex;
@@ -44,9 +44,9 @@ const Indicator = styled.span`
   &:hover {
     color: ${props => `rgba(${props.theme.bodyRgba}, 0.6)`};
   }
-`
+`;
 
-function Accordion({title, children}) {
+function Accordion({ title, children }) {
   const [collapse, setCollapse] = useState(false);
 
   return (
@@ -55,17 +55,19 @@ function Accordion({title, children}) {
         <Name>
           <span>{title}</span>
         </Name>
-        {
-          collapse ? 
-            <Indicator><FaMinus/></Indicator> : 
-            <Indicator><FaPlus/></Indicator>
-        }
+        {collapse ? (
+          <Indicator>
+            <FaMinus />
+          </Indicator>
+        ) : (
+          <Indicator>
+            <FaPlus />
+          </Indicator>
+        )}
       </Title>
-      <Reveal clicked={collapse}>
-          {children}
-      </Reveal>
+      <Reveal clicked={collapse}>{children}</Reveal>
     </Container>
-  )
+  );
 }
 
 export default Accordion;

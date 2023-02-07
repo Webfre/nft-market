@@ -1,8 +1,10 @@
-import React, { useRef, useLayoutEffect } from 'react'
+import React, { useRef, useLayoutEffect } from 'react';
 import styled from 'styled-components';
-import Accordion from '../Accordion';
+
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+
+import Accordion from '../Accordion';
 
 const Section = styled.section`
   min-height: 100vh;
@@ -15,7 +17,7 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-`
+`;
 
 const Title = styled.h2`
   font-size: ${props => props.theme.fontxxl};
@@ -28,7 +30,7 @@ const Title = styled.h2`
   @media (max-width: 48em) {
     font-size: ${props => props.theme.fontxl};
   }
-` 
+`; 
 
 const Container = styled.div`
   width: 75%;
@@ -51,7 +53,7 @@ const Container = styled.div`
       }
     }
   }
-`
+`;
 
 const Box = styled.div`
   width: 45%;
@@ -60,14 +62,14 @@ const Box = styled.div`
     width: 90%;
     align-self: center;
   }
-`
+`;
 
 function Faq() {
-  const ref = useRef(null)
+  const ref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
   
   useLayoutEffect(() => {
-    let element = ref.current;
+    const element = ref.current;
 
     ScrollTrigger.create({
       trigger: element,
@@ -76,12 +78,12 @@ function Faq() {
       pin: true,
       pinSpacing: false,
       scrub: true,
-    })
+    });
   
     return () => {
       ScrollTrigger.kill();
     };
-  }, [])
+  }, []);
 
   return (
     <Section id='faq' ref={ref}>
@@ -117,7 +119,7 @@ function Faq() {
         </Box>
       </Container>
     </Section>
-  )
+  );
 }
 
 export default Faq;

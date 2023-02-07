@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import {nftSmircs} from '../data';
 
 const Section = styled.section`
@@ -20,7 +21,7 @@ const Section = styled.section`
     height: 15rem;
     flex-direction: column;
   }
-`
+`;
 
 const ImgContainer = styled.div`
   width: 100vw;
@@ -46,7 +47,7 @@ const ImgContainer = styled.div`
       margin-right: 5rem;
     }
   }
-`
+`;
 
 const Title = styled.h2`
   font-size: ${props => props.theme.fontxxxl};
@@ -67,7 +68,7 @@ const Title = styled.h2`
     padding: 2rem 0;
     width: 100%;
   }
-`
+`;
 
 const BtnContainer = styled.div`
   width: 35%;
@@ -79,7 +80,7 @@ const BtnContainer = styled.div`
     width: 100%;
     justify-content: center;
   }
-`
+`;
 
 const JoinNow = styled.button`
   display: inline-block;
@@ -109,7 +110,7 @@ const JoinNow = styled.button`
     padding: 0.5rem 2rem;
     font-size: ${props => props.theme.fontsm};
   }
-`
+`;
 
 function Banner() {
   return (
@@ -119,7 +120,7 @@ function Banner() {
           nftSmircs.map(({link, number, title}) => {
             return (
               <img key={number} src={link} alt={title} />
-            )
+            );
           })
         }
       </ImgContainer>
@@ -128,7 +129,7 @@ function Banner() {
         <JoinNow>Join Us</JoinNow>
       </BtnContainer>
     </Section>
-  )
+  );
 }
 
 export default Banner;

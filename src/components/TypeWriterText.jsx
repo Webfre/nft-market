@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
+
 import Button from './Button';
 
 const Title = styled.h2`
@@ -37,7 +38,7 @@ const Title = styled.h2`
   @media (max-width: 40em) {
     width: 90%;
   }
-`
+`;
 
 const SubTitle = styled.h3`
   font-size: ${props => props.theme.fontlg};
@@ -56,7 +57,7 @@ const SubTitle = styled.h3`
     align-self: center;
     text-align: center;
   }
-`
+`;
 
 const ButtonContainer = styled.div`
   width: 80%;
@@ -71,7 +72,7 @@ const ButtonContainer = styled.div`
       margin: 0 auto;
     }
   }
-`
+`;
 
 function TypeWriterText() {
   return (
@@ -79,33 +80,33 @@ function TypeWriterText() {
       <Title>
       0% Fees
 
-      <Typewriter
-        options={{
-          autoStart: true,
-          loop: true,
-        }}
-        onInit={(typewriter) => {
-          typewriter.typeString('<span class="text-1">Hot collections!</span>')
-          .pauseFor(2000)
-          .deleteAll()
-          .typeString('<span class="text-2">Create NFT marketplace.</span>')
-          .pauseFor(2000)
-          .deleteAll()
-          .typeString('<span class="text-3">Share Your collections!</span>')
-          .pauseFor(2000)
-          .deleteAll()
-          .start();
-        }}
-      />
+        <Typewriter
+          options={{
+            autoStart: true,
+            loop: true,
+          }}
+          onInit={(typewriter) => {
+            typewriter.typeString('<span class="text-1">Hot collections!</span>')
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString('<span class="text-2">Create NFT marketplace.</span>')
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString('<span class="text-3">Share Your collections!</span>')
+              .pauseFor(2000)
+              .deleteAll()
+              .start();
+          }}
+        />
       </Title>
       
       <SubTitle>Buy aggregated NFTs from 5 blockchains. Lock your $RARI — unlock 0% fees.</SubTitle>
 
       <ButtonContainer>
-        <Button text="Explore" link="#about" />
+        <Button text='Explore' link='#about' />
       </ButtonContainer>
     </>
-  )
+  );
 }
 
 export default TypeWriterText;

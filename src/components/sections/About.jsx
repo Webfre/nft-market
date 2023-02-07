@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+
 import {dark} from '../../styles/Themes';
 import Carousel from '../Carousel';
 import Button from '../Button';
@@ -12,7 +13,7 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
   position: relative;
-`
+`;
 
 const Container = styled.div`
   width: 75%;
@@ -40,7 +41,7 @@ const Container = styled.div`
       width: 90%;
     }
   }
-`
+`;
 
 const Box = styled.div`
   width: 50%;
@@ -54,7 +55,7 @@ const Box = styled.div`
   @media (max-width: 40em) {
     min-height: 50vh;
   }
-`
+`;
 
 const Title = styled.h2`
   font-size: ${props => props.theme.fontxxl};
@@ -76,7 +77,7 @@ const Title = styled.h2`
   @media (max-width: 30em) {
     font-size: ${props => props.theme.fontlg};
   }
-`
+`;
 
 const SubText = styled.p`
   font-size: ${props => props.theme.fontlg};
@@ -99,7 +100,7 @@ const SubText = styled.p`
   @media (max-width: 30em) {
     font-size: ${props => props.theme.fontsd};
   }
-`
+`;
 
 const SubTextLight = styled.p`
   font-size: ${props => props.theme.fontmd};
@@ -122,7 +123,7 @@ const SubTextLight = styled.p`
   @media (max-width: 30em) {
     font-size: ${props => props.theme.fontxs};
   }
-`
+`;
 
 const ButtonContainer = styled.div`
   width: 80%;
@@ -137,7 +138,7 @@ const ButtonContainer = styled.div`
       margin: 0 auto;
     }   
   }
-`
+`;
 
 function About() {
   return (
@@ -156,7 +157,7 @@ function About() {
         </Box>
       </Container>
     </Section>
-  )
+  );
 }
 
 export default About;

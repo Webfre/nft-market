@@ -19,7 +19,7 @@ const Section = styled.section`
 
   display: flex;
   flex-direction: column;
-`
+`;
 
 const Container = styled.div`
   width: 75%;
@@ -36,7 +36,7 @@ const Container = styled.div`
       font-size: ${props => props.theme.fontxxl};
     }
   }
-`
+`;
 
 const Left = styled.div`
   display: flex;
@@ -47,7 +47,7 @@ const Left = styled.div`
   @media (max-width: 48em) {
     width: 100%;
   }
-`
+`;
 
 const IconsList = styled.ul`
   font-size: ${props => props.theme.fontxl};
@@ -63,7 +63,7 @@ const IconsList = styled.ul`
       transform: scale(1.2);
     }
   }
-`
+`;
 
 const MenuItems = styled.ul`
   list-style: none;
@@ -76,7 +76,7 @@ const MenuItems = styled.ul`
   @media (max-width: 48em) {
     display: none;
   }
-`
+`;
 
 const Item = styled.li`
   width: fit-content;
@@ -94,7 +94,7 @@ const Item = styled.li`
   &:hover::after {
     width: 100%;
   }
-`
+`;
 
 const Bottom = styled.div`
   width: 75%;
@@ -115,17 +115,17 @@ const Bottom = styled.div`
       margin-bottom: 1rem;
     }
   }
-`
+`;
 
 function Footer() {
   const scrollTo = (id) => {
-    let element = document.getElementById(id);
+    const element = document.getElementById(id);
     element.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
       inline: 'nearest',
-    })
-  }
+    });
+  };
 
   return (
     <Section>
@@ -135,10 +135,10 @@ function Footer() {
         <Left>
           <Logo/>
           <IconsList>
-            <a href="#" target="_blank" rel="noopener noreferrer"><BsLinkedin/></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><ImTwitter/></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><FaFacebook/></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><SiTelegram/></a>
+            <a href='#' target='_blank' rel='noopener noreferrer'><BsLinkedin/></a>
+            <a href='#' target='_blank' rel='noopener noreferrer'><ImTwitter/></a>
+            <a href='#' target='_blank' rel='noopener noreferrer'><FaFacebook/></a>
+            <a href='#' target='_blank' rel='noopener noreferrer'><SiTelegram/></a>
           </IconsList>
         </Left>
         <MenuItems>
@@ -148,20 +148,20 @@ function Footer() {
           <Item onClick={() => scrollTo('showcase')} >Showcase</Item>
           <Item onClick={() => scrollTo('team')} >Team</Item>
           <Item onClick={() => scrollTo('faq')} >Faq</Item>
-          </MenuItems>
+        </MenuItems>
       </Container>
       <Bottom>
         <span>
           &copy; {new Date().getFullYear()} Meta Club. All rights reserved 
         </span>
         <span>
-          Made with 👨‍💻 by <a href="https://vk.com/id367096719" target="_blank" rel="noopener noreferrer">
+          Made with 👨‍💻 by <a href='https://vk.com/id367096719' target='_blank' rel='noopener noreferrer'>
             Roman
           </a>
         </span>
       </Bottom>
     </Section>
-  )
+  );
 }
 
 export default Footer;

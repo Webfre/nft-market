@@ -12,17 +12,17 @@ import Kong10 from './assets/NFTs/SupremeKong/unnamed10.png';
 import Kong11 from './assets/NFTs/SupremeKong/unnamed11.png';
 import Kong12 from './assets/NFTs/SupremeKong/unnamed12.png';
 
-import Hooligan1 from './assets/NFTs/Hooligan/1.png'
-import Hooligan2 from './assets/NFTs/Hooligan/2.png'
-import Hooligan3 from './assets/NFTs/Hooligan/3.png'
-import Hooligan4 from './assets/NFTs/Hooligan/4.png'
-import Hooligan5 from './assets/NFTs/Hooligan/5.png'
+import Hooligan1 from './assets/NFTs/Hooligan/1.png';
+import Hooligan2 from './assets/NFTs/Hooligan/2.png';
+import Hooligan3 from './assets/NFTs/Hooligan/3.png';
+import Hooligan4 from './assets/NFTs/Hooligan/4.png';
+import Hooligan5 from './assets/NFTs/Hooligan/5.png';
 
-import Smircs1 from './assets/NFTs/Smircs/1.png'
-import Smircs2 from './assets/NFTs/Smircs/2.png'
-import Smircs3 from './assets/NFTs/Smircs/3.png'
-import Smircs4 from './assets/NFTs/Smircs/4.png'
-import Smircs5 from './assets/NFTs/Smircs/5.png'
+import Smircs1 from './assets/NFTs/Smircs/1.png';
+import Smircs2 from './assets/NFTs/Smircs/2.png';
+import Smircs3 from './assets/NFTs/Smircs/3.png';
+import Smircs4 from './assets/NFTs/Smircs/4.png';
+import Smircs5 from './assets/NFTs/Smircs/5.png';
 
 import Team1 from './assets/Team/Team1.png';
 import Team2 from './assets/Team/Team2.png';
@@ -46,7 +46,7 @@ export const nftKong = [
   { link: Kong10, title: 'Kong' },
   { link: Kong11, title: 'Kong' },
   { link: Kong12, title: 'Kong' },
-]
+];
 
 export const nftHooligan = [
   { link: Hooligan1, title: 'Hooligan1', price: 1.22, number: 4948 },
@@ -54,7 +54,7 @@ export const nftHooligan = [
   { link: Hooligan3, title: 'Hooligan3', price: 1.12, number: 2648 },
   { link: Hooligan4, title: 'Hooligan4', price: 1.35, number: 2832 },
   { link: Hooligan5, title: 'Hooligan5', price: 1.10, number: 3844 },
-]
+];
 
 export const nftSmircs = [
   { link: Smircs1, title: 'Smircs1', price: 0.05, number: 539 },
@@ -62,7 +62,7 @@ export const nftSmircs = [
   { link: Smircs3, title: 'Smircs3', price: 0.05, number: 217 },
   { link: Smircs4, title: 'Smircs4', price: 0.06, number: 369 },
   { link: Smircs5, title: 'Smircs5', price: 0.05, number: 372 },
-]
+];
 
 export const nftTeam = [
   { link: Team1, name: 'Daniel Lang', position: 'UI/UX designer' },
@@ -74,4 +74,4 @@ export const nftTeam = [
   { link: Team1, name: 'Dwight Garrison', position: 'Business Analysts' },
   { link: Team8, name: 'Anthony Clarke', position: 'QA engineers' },
   { link: Team9, name: 'Lana Preston', position: 'Solidity developer' },
-]
+];

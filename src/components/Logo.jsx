@@ -14,7 +14,7 @@ const Logotype = styled.h2`
   @media (max-width: 64em) {
     font-size: ${props => props.theme.fontxxl};
   }
-`
+`;
 
 function Logo() {
   return (       
@@ -23,7 +23,7 @@ function Logo() {
           .NFT
       </Link> 
     </Logotype>
-  )
+  );
 }
 
 export default Logo;
