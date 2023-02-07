@@ -11,7 +11,7 @@ NFT marketplace - collections NFT beautiful design lots of effects.
 
 ## Preview
 
-<a href="https://webfre.github.io/clone-youtube/" target="_blank">Follow the link 👁</a>
+<a href="https://webfre.github.io/nft-market/" target="_blank">Follow the link 👁</a>
 
 ## Tech
 
