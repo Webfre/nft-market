@@ -47,6 +47,7 @@ git clone https://github.com/Webfre/nft-market.git
 Start the project:
 
 ```sh
+npm install
 cd nft-marketplace
 npm start or yarn start
 ```
